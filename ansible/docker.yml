@@ -1,5 +1,5 @@
 - name: Wordpress with Docker
-  hosts: wordpress
+  hosts: aws-wordpress
   become: yes
 
   tasks:

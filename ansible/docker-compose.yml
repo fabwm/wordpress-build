@@ -6,11 +6,10 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: admin123
+      MYSQL_ROOT_PASSWORD: senhaqualquer #edite e coloque sua senha
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
-      MYSQL_PASSWORD: admin123
-
+      MYSQL_PASSWORD: senhaqualquer #edite e coloque sua senha
   wordpress:
     image: wordpress:latest
     ports:
@@ -20,7 +19,7 @@ services:
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: admin123
+      WORDPRESS_DB_PASSWORD: senhaqualquer #edite e coloque sua senha
       WORDPRESS_DB_NAME: wordpress
 
 volumes:
